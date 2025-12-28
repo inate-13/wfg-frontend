@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #f0f0f0;
+}
+
+/* body {
+  @apply bg-[#f4f7fb] text-gray-800;
+} */
+
+body {
+  background: linear-gradient(180deg, #f7f9fc 0%, #eef2f7 100%);
+  color: #1f2937;
+}
+
+/* reusable card style */
+.card {
+  @apply bg-white rounded-2xl px-6 py-6;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.04);
+}
