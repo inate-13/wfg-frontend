@@ -6,8 +6,10 @@ export interface CallDurationPoint {
 export interface SadPathItem {
   label: string;
   value: number;
+  [key: string]: any;
 }
 export interface StoredCallData {
   email: string;
   data: CallDurationPoint[];
 }
+

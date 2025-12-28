@@ -21,11 +21,15 @@ export default function EditCallDataModal({
   const [hasExistingData, setHasExistingData] = useState(false);
   const [overwriteConfirmed, setOverwriteConfirmed] = useState(false);
   const [checkingExisting, setCheckingExisting] = useState(false);
+  
+  
 
   /**
    * Reset modal state every time it opens
    */
   useEffect(() => {
+      console.log(checkingExisting);
+
     if (isOpen) {
       // Clone initial dummy data (VERY IMPORTANT)
       setValues(JSON.parse(JSON.stringify(initialData)));
